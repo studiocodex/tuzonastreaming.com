@@ -1,0 +1,461 @@
+/* FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* === NAVBAR === */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  padding: 15px 0;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px #ff005e;
+  z-index: 999;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff005e;
+  text-shadow: 0 0 10px #ff005e;
+}
+
+/* === TITULOS === */
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3em;
+  color: #ff005e;
+  text-shadow: 0 0 15px #ff3c7d, 0 0 30px #00d4ff;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+  background: linear-gradient(45deg, #ff005e, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+/* === SECCIONES === */
+.seccion {
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 20px rgba(255,0,94,0.3);
+  max-width: 950px;
+  transition: all 0.3s ease;
+}
+
+.seccion:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0,212,255,0.4);
+}
+
+/* === PLATAFORMAS === */
+.plataforma {
+  text-align: center;
+  width: 140px;
+  background: linear-gradient(145deg, #111, #1a1a1a);
+  padding: 15px;
+  border-radius: 14px;
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 15px rgba(0,212,255,0.2);
+  transition: all 0.4s ease;
+}
+
+.plataforma:hover {
+  transform: translateY(-8px) scale(1.05);
+  border-color: #ff005e;
+  box-shadow: 0 0 25px #ff005e, 0 0 40px #00d4ff;
+}
+
+.plataforma img {
+  width: 70px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* === GALERIA === */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  background: rgba(0,0,0,0.6);
+  border-radius: 14px;
+  padding: 10px;
+  border: 2px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #ff005e, 0 0 40px #00d4ff;
+}
+
+.item img {
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* === BOTONES === */
+button, .boton-info, .btn-whatsapp {
+  background: linear-gradient(45deg, #ff005e, #00d4ff);
+  border: none;
+  padding: 10px 18px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover, .boton-info:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff005e, 0 0 25px #00d4ff;
+}
+
+/* === PRECIOS ESPECIALES === */
+.seccion li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px dashed rgba(255,255,255,0.2);
+  font-size: 18px;
+}
+
+.seccion li span:first-child {
+  font-weight: 600;
+  color: #fff;
+}
+
+.seccion li span:last-child {
+  color: #ff005e;
+  font-weight: 700;
+  text-shadow: 0 0 8px #ff005e;
+}
+
+/* === FOOTER === */
+footer {
+  background: rgba(0,0,0,0.9);
+  color: #aaa;
+  padding: 15px;
+  font-size: 0.9rem;
+  border-top: 2px solid rgba(255,255,255,0.1);
+}
+
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ====== BODY ====== */
+body {
+  background: #0d0d0d;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* ====== NAVBAR ====== */
+nav {
+  background: linear-gradient(90deg, #ff004c, #ff6600);
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ====== TITULOS ====== */
+h2 {
+  text-align: center;
+  margin: 25px 0;
+  color: #ff004c;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* ====== GALERÍA DE IMÁGENES ====== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* ====== LISTA DE CUENTAS ====== */
+#preespe ul {
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+}
+
+#preespe li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 10px rgba(255,0,76,0.4);
+  transition: transform 0.3s;
+}
+
+#preespe li:hover {
+  transform: translateX(6px);
+}
+
+#preespe li span:first-child {
+  font-weight: bold;
+  color: #fff;
+}
+
+#preespe li span:last-child {
+  color: #ffcc00;
+  font-weight: 600;
+}
+
+/* ====== BOTONES ====== */
+button, .btn {
+  background: linear-gradient(90deg, #ff004c, #ff6600);
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+  opacity: 0.85;
+}
+
+/* ====== WHATSAPP FLOAT ====== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 14px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.whatsapp-float img {
+  width: 36px;
+  height: 36px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ====== FOTO DE PERFIL ====== */
+
+.logo-container {
+
+  text-align: center;  /* truco para centrar dentro del contenedor */
+  margin: 30px 0;
+}
+
+.logo-container img {
+
+width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ff004c;
+  box-shadow: 0 4px 15px rgba(255,0,76,0.5);
+
+
+}
+
+
+/* ====== SERVICIOS EN GRID ====== */
+/* ====== CONTENEDOR DE TODAS LAS PLATAFORMAS ====== */
+.plataformas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* se adaptan según ancho */
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* ====== CADA TARJETA DE SERVICIO ====== */
+.plataforma {
+  background: #111;
+  border: 2px solid #ff004c;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255,0,76,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plataforma:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255,0,76,0.7);
+}
+
+/* ====== IMÁGENES ====== */
+.plataforma img {
+  width: 100%;
+  max-width: 180px;   /* controla el tamaño */
+  height: 120px;      /* altura uniforme */
+  object-fit: cover;  /* recorte elegante */
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ff004c;
+}
+
+/* ====== GALERÍA CATALOGO ====== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* se adapta según pantalla */
+  gap: 20px; /* espacio entre items */
+  justify-items: center; /* centra los items dentro de la columna */
+  margin-top: 20px;
+}
+
+.item {
+  background: #111;
+  border: 2px solid #ff004c;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255,0,76,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255,0,76,0.7);
+}
+
+.item img {
+  width: 100%;
+  height: 250px;          /* altura uniforme y grande */
+  object-fit: cover;      /* muestra toda la imagen recortando lo necesario */
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ff004c;
+}
+
+.item p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Botón "Ver Información" */
+.boton-info {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.boton-info:hover {
+  background-color: #217dbb;
+}
+
+/*para mejorar la vista en el celular- responsive*/
+@media (max-width: 600px) {
+  .plataformas,
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .botones-catalogo button {
+    width: 90%;
+    margin: 5px auto;
+  }
+}
+
+
+
+/* ===== Responsive para móviles ===== */
+@media (max-width: 600px) {
+  .plataformas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .plataforma {
+    width: 100%; /* ocupa toda la columna disponible */
+  }
+}
